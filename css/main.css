@@ -358,8 +358,8 @@ a:hover > i {
     font-size: 1.9rem;
   }
   .clock-container {
-    margin-top: -20px;
-    margin-bottom: 20px;
+    margin-top: -15px;
+    margin-bottom: 15px;
     height: calc(100% - 45px);
   }
   .seconds {
