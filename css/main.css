@@ -356,6 +356,49 @@ a:hover > i {
 
 @media (max-height: 800px) and (orientation: landscape) {
   body {
+    background-image: url('div.png');
+  }
+  .quotes-container {
+    font-size: 1.9rem;
+  }
+  .clock-container {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    height: calc(100% - 45px);
+  }
+  .seconds {
+    height: 400px;
+    width: 400px;
+    border: 3px solid black;
+  }
+
+  .mins {
+    height: 350px;
+    width: 350px;
+    border: 3px solid black;
+  }
+
+  .hours {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+  }
+  .pointer {
+    border: 3px solid black;
+  }
+  .time {
+    font-size: 3.5rem;
+  }
+  a {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 610px) and (orientation: landscape) {
+  body {
     background-image: url('div2.png');
   }
   .quotes-container {
