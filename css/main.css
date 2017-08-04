@@ -8,6 +8,7 @@ body {
   background: #eaeaea;
   font-family: "Share Tech Mono", sans-serif;
   -webkit-animation: mouse 1s linear infinite;
+  overflow: hidden;
 }
 
 @-webkit-keyframes mouse {
