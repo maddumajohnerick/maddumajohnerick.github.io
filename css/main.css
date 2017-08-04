@@ -278,6 +278,9 @@ a:hover > i {
   body {
     background-image: url('div2.png');
   }
+  .quotes-container {
+    font-size: 1.9rem;
+  }
   .seconds {
     height: 300px;
     width: 300px;
