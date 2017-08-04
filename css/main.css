@@ -223,7 +223,7 @@ a:hover > i {
 @media (max-width: 1199px) {
   body {
     background-image: url('div.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center bottom;
   }
   .main-container {
@@ -350,7 +350,7 @@ a:hover > i {
   }
 }
 
-@media (max-height: 414px) and (orientation: landscape) {
+@media (max-height: 800px) and (orientation: landscape) {
   body {
     background-image: url('div2.png');
   }
