@@ -363,6 +363,52 @@ a:hover > i {
     height: calc(100% - 45px);
   }
   .seconds {
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+  }
+
+  .mins {
+    height: 215px;
+    width: 215px;
+    border: 2px solid black;
+  }
+
+  .hours {
+    height: 180px;
+    width: 180px;
+    border: 2px solid black;
+  }
+  .pointer {
+    border: 2px solid black;
+    height: 12px;
+    width: 12px;
+    margin-top: -7px;
+  }
+  .time {
+    font-size: 2rem;
+  }
+  a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 414px) and (orientation: landscape) {
+  body {
+    background-image: url('div2.png');
+  }
+  .quotes-container {
+    font-size: 1.9rem;
+  }
+  .clock-container {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    height: calc(100% - 45px);
+  }
+  .seconds {
     height: 200px;
     width: 200px;
     border: 2px solid black;
