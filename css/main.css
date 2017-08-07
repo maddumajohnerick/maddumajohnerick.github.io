@@ -357,6 +357,7 @@ a:hover > i {
 @media (max-height: 800px) and (orientation: landscape) {
   body {
     background-image: url('div.png');
+    background-position: center;
   }
   .quotes-container {
     font-size: 1.9rem;
@@ -458,22 +459,22 @@ a:hover > i {
   .seconds {
     height: 200px;
     width: 200px;
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   .mins {
     height: 170px;
     width: 170px;
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   .hours {
     height: 140px;
     width: 140px;
-    border: 2px solid black;
+    border: 1px solid black;
   }
   .pointer {
-    border: 2px solid black;
+    border: 1px solid black;
     height: 12px;
     width: 12px;
     margin-top: -7px;
@@ -484,7 +485,7 @@ a:hover > i {
   a {
     width: 40px;
     height: 40px;
-    border: 2px solid black;
+    border: 1px solid black;
     font-size: 1.5rem;
   }
 }
