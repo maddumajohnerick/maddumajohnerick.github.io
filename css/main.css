@@ -6,6 +6,7 @@ body {
   color: black;
   cursor: url('cur.png'), auto;
   background: #eaeaea;
+  background-position: center;
   font-family: "Share Tech Mono", sans-serif;
   -webkit-animation: mouse 1s linear infinite;
   overflow: hidden;
@@ -357,7 +358,6 @@ a:hover > i {
 @media (max-height: 800px) and (orientation: landscape) {
   body {
     background-image: url('div.png');
-    background-position: center;
   }
   .quotes-container {
     font-size: 1.9rem;
@@ -446,7 +446,7 @@ a:hover > i {
 
 @media (max-height: 414px) and (orientation: landscape) {
   body {
-    background-image: url('div2.png');
+    background-image: url('div3.png');
   }
   .quotes-container {
     font-size: 1.9rem;
