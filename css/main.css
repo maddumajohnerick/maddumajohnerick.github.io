@@ -10,6 +10,7 @@ body {
   font-family: "Share Tech Mono", sans-serif;
   -webkit-animation: mouse 1s linear infinite;
   overflow: hidden;
+  background-repeat: repeat-y;
 }
 
 @-webkit-keyframes mouse {
@@ -228,7 +229,6 @@ a:hover > i {
 @media (max-width: 1199px) {
   body {
     background-image: url('div.png');
-    background-repeat: repeat-y;
     background-position: center bottom;
   }
   .main-container {
@@ -365,7 +365,7 @@ a:hover > i {
   .clock-container {
     margin-top: -15px;
     margin-bottom: 15px;
-    height: calc(100% - 45px);
+    height: calc(100% - 60px);
   }
   .seconds {
     height: 400px;
@@ -454,7 +454,7 @@ a:hover > i {
   .clock-container {
     margin-top: -15px;
     margin-bottom: 15px;
-    height: calc(100% - 45px);
+    height: calc(100% - 50px);
   }
   .seconds {
     height: 200px;
