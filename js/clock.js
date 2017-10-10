@@ -45,7 +45,7 @@ $(document).ready(function() {
 
       $('.mins').css({ transform: mrotate });
 
-      if (hours === 0 && seconds === 0) {
+      if (String(hours) !== moment().format('H')) {
         hourctr++;
         hrotate = 'rotate(' + (hours * 30 + mins / 2 + hourctr * 360) + 'deg)';
       }
