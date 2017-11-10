@@ -153,6 +153,18 @@ body {
   background: #eaeaea;
 }
 
+.hours .pointer {
+    background-color: #AD3131;
+}
+
+.mins .pointer {
+    background-color: #006565;
+}
+
+.seconds .pointer {
+    background-color: #476B00;
+}
+
 .time {
   text-align: center;
   font-size: 4rem;
