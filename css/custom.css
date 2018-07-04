@@ -98,11 +98,16 @@ article .divider {
   position: relative;
 }
 
-i.github, i.linkedin, i.codepen, i.deviantart {
+i.github, i.linkedin, i.codepen, i.deviantart, i.codewars {
   color: #3c3c3c !important;
   margin-top: 2px;
   transition: .3s;
   transition-delay: .5s;
+}
+
+i.codewars {
+  margin-top: 0px;
+  font-weight: bold;
 }
 
 i.github.active {
@@ -119,6 +124,10 @@ i.codepen.active {
 
 i.deviantart.active {
   color: #07a93c !important;
+}
+
+i.codewars.active {
+  color: #b42e22 !important;
 }
 
 img.codewars {
@@ -291,7 +300,7 @@ div#lightgallery {
   }
   img.codewars {
     height: 25px;
-    top: -2px;
+    top: -3px;
     left: 9px;
   }
   i.github {
