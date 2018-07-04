@@ -311,95 +311,105 @@
           $(this).remove();
         });
         
-        inView.offset({top: 50, bottom: 200});
+        $( window ).resize(function() {
+          console.log("resizing")
+        });
         
-        setTimeout(() => {
-          inView('i.github, i.linkedin, i.codepen, i.deviantart, img.codewars, .cp_embed_wrapper, .pic-thumb')
-          .on('enter', el => {
-            $(el).addClass("active");
-          })
-          .on('exit', el => {
-            $(el).removeClass("active");
-          });
-        },300);
+        handleResize()
         
-        $(document).ready(function(){
-            particlesJS("particles-js", {
-              "particles": {
-                "number": {
-                  "value": 60,
-                  "density": {
-                    "enable": true,
-                    "value_area": 900
-                  }
-                },
-                "color": {
-                  "value": ["#3c3c3c", "#3c3c3c"]
-                },
-                "shape": {
-                  "type": "polygon",
-                  "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                  },
-                  "polygon": {
-                    "nb_sides": 6
-                  }
-                },
-                "opacity": {
-                  "value": .2,
-                  "random": false,
-                  "anim": {
-                    "enable": false,
-                    "speed": .5,
-                    "opacity_min": .1,
-                    "sync": false
-                  }
-                },
-                "size": {
-                  "value": 3,
-                  "random": true,
-                  "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 2,
-                    "sync": false
-                  }
-                },
-                "line_linked": {
-                  "enable": true,
-                  "distance": 150,
-                  "color": "#3c3c3c",
-                  "opacity": .1,
-                  "width": 1
-                },
-                "move": {
-                  "enable": true,
-                  "speed": 1,
-                  "direction": "none",
-                  "random": false,
-                  "straight": false,
-                  "out_mode": "out",
-                  "bounce": false,
-                  "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                  }
-                }
-              },
-              "retina_detect": true,
-              "interactivity": {
-                "events": {
-                  "onclick": {
-                    "enable": false
-                  },
-                  "onhover": {
-                    "enable": false
-                  }
-                }
-              }
+        function handleResize(){
+          if($(window).height() <= 340){
+            inView.offset({top: 50, bottom: 100});
+          } else{
+            inView.offset({top: 50, bottom: 200});
+          }
+          
+          setTimeout(() => {
+            inView('i.github, i.linkedin, i.codepen, i.deviantart, img.codewars, .cp_embed_wrapper, .pic-thumb')
+            .on('enter', el => {
+              $(el).addClass("active");
+            })
+            .on('exit', el => {
+              $(el).removeClass("active");
             });
+          },300);
+        }
+        
+        particlesJS("particles-js", {
+          "particles": {
+            "number": {
+              "value": 60,
+              "density": {
+                "enable": true,
+                "value_area": 900
+              }
+            },
+            "color": {
+              "value": ["#3c3c3c", "#3c3c3c"]
+            },
+            "shape": {
+              "type": "polygon",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 6
+              }
+            },
+            "opacity": {
+              "value": .2,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": .5,
+                "opacity_min": .1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 2,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#3c3c3c",
+              "opacity": .1,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "retina_detect": true,
+          "interactivity": {
+            "events": {
+              "onclick": {
+                "enable": false
+              },
+              "onhover": {
+                "enable": false
+              }
+            }
+          }
         });
         
       });
