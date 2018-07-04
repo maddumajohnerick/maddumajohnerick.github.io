@@ -292,14 +292,15 @@
         </section>
         <section class="divider"></section>
       </article>
-
     </div>
+    <div id="particles-js"></div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     <script src="lightgallery/js/lightgallery.min.js"></script>
     <script src="lightgallery/js/lg-zoom.js"></script>
     <script src="js/in-view.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <script async type="text/javascript">
       $(document).ready(function() {
         lightGallery(document.getElementById('lightgallery'));
@@ -322,6 +323,84 @@
           });
         },300);
         
+        $(document).ready(function(){
+            particlesJS("particles-js", {
+              "particles": {
+                "number": {
+                  "value": 60,
+                  "density": {
+                    "enable": true,
+                    "value_area": 900
+                  }
+                },
+                "color": {
+                  "value": ["#3c3c3c", "#3c3c3c"]
+                },
+                "shape": {
+                  "type": "polygon",
+                  "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                  },
+                  "polygon": {
+                    "nb_sides": 6
+                  }
+                },
+                "opacity": {
+                  "value": .2,
+                  "random": false,
+                  "anim": {
+                    "enable": false,
+                    "speed": .5,
+                    "opacity_min": .1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 3,
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 2,
+                    "sync": false
+                  }
+                },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 150,
+                  "color": "#3c3c3c",
+                  "opacity": .1,
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 1,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "retina_detect": true,
+              "interactivity": {
+                "events": {
+                  "onclick": {
+                    "enable": false
+                  },
+                  "onhover": {
+                    "enable": false
+                  }
+                }
+              }
+            });
+        });
         
       });
     </script>

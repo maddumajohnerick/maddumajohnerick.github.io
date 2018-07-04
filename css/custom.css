@@ -29,6 +29,8 @@ html, body {
   width: 900px;
   height: 100%;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 
 article {
@@ -309,6 +311,13 @@ div#lightgallery {
 
 small {
   font-size: .9rem;
+}
+
+div#particles-js {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 /*HANDLE OTHER DIMENSIONS*/
