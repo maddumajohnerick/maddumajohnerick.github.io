@@ -102,6 +102,7 @@ i.github, i.linkedin, i.codepen, i.deviantart, i.codewars {
   color: #3c3c3c !important;
   margin-top: 2px;
   transition: .3s;
+  transition-delay: .5s;
 }
 
 i.codewars {
@@ -136,6 +137,7 @@ img.codewars {
   left: 12.5px;
   filter: grayscale(15);
   transition: .3s;
+  transition-delay: .5s
 }
 
 img.codewars.active {
@@ -220,6 +222,7 @@ img.codewars.active {
   height: 100%;
   filter: grayscale(15);
   transition: .3s;
+  transition-delay: .5s;
 }
 
 .cp_embed_wrapper.active {
@@ -260,6 +263,7 @@ div#lightgallery {
   width: 100%;
   filter: grayscale(15);
   transition: .3s;
+  transition-delay: .5s;
 }
 
 .pic-thumb.active {
