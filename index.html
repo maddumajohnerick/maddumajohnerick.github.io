@@ -27,7 +27,7 @@
           </div>
         </header>
         <section class="content">
-          I'm a Jr. Creative Developer. I have experience developing web applications using ES6, React, and Node. I like playing around with HTML and CSS and making stuffs out of it. I also do vector/vexel illustrations using Adobe Photoshop.
+          I'm a Web Developer. I have experience developing web applications using ES6, React, and Node. I like playing around with HTML and CSS and making stuffs out of it. I also do vector/vexel illustrations using Adobe Photoshop.
           <div class="socials">
             <a href="https://www.linkedin.com/in/john-erick-madduma-300083113" target="_blank">
               <span class="fa-stack fa-lg" aria-hidden="true">
@@ -106,7 +106,7 @@
         </section>
         <section class="divider"></section>
       </article>
-      
+
       <article class="experience">
         <header>
           <div class="head-formatter">
@@ -315,25 +315,25 @@
       $(document).ready(function() {
         lightGallery(document.getElementById('lightgallery'));
       });
-        
+
       window.addEventListener("load", function(){
         $('#preloader').fadeOut('slow', function() {
           $(this).remove();
         });
-        
+
         $( window ).resize(function() {
           console.log("resizing")
         });
-        
+
         handleResize()
-        
+
         function handleResize(){
           if($(window).height() <= 340){
             inView.offset({top: 50, bottom: 100});
           } else{
             inView.offset({top: 50, bottom: 200});
           }
-          
+
           setTimeout(() => {
             inView('i.github, i.linkedin, i.codepen, i.deviantart, i.codewars, img.codewars, .cp_embed_wrapper, .pic-thumb')
             .on('enter', el => {
@@ -344,7 +344,7 @@
             });
           },300);
         }
-        
+
         particlesJS("particles-js", {
           "particles": {
             "number": {
@@ -421,7 +421,7 @@
             }
           }
         });
-        
+
       });
     </script>
 
