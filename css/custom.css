@@ -92,6 +92,12 @@ article .divider {
   margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .socials {
+    text-align: center;
+  }
+}
+
 .socials a{
   color: white;
   text-decoration: none;
@@ -167,6 +173,17 @@ img.codewars.active {
 
 .my-experience:last-child, .my-skills:last-child, .my-packages:last-child {
   border-bottom: none;
+}
+
+.my-packages .content {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .my-packages .content {
+    flex-direction: column;
+  }
 }
 
 .desc {
