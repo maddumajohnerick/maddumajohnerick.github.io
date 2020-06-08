@@ -1,4 +1,4 @@
 # portfolio
 my porfolio
 
-[View](https://maddumajohnerick.github.io/portfolio/)
+[View](https://maddumajohnerick.github.io)
