@@ -7,6 +7,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  cursor: default;
 
   .task-left {
     display: flex;
@@ -26,6 +27,20 @@
         color: #429ce3;
       }
     }
+
+    .vscode {
+      background-color: #4c4c4c;
+      box-sizing: border-box;
+
+      img {
+        width: 26px;
+      }
+      border-bottom: 3px solid#76b9ed;
+
+      &:hover {
+        background-color: #605f5f;
+      }
+    }
   }
 
   .task-right {
@@ -34,15 +49,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0px 15px 0px 0px;
+    padding: 0px 5px 0px 0px;
     align-items: center;
 
-    * {
-      margin-left: 10px;
+    > div {
+      height: 100%;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #4c4c4c;
+      }
+    }
+
+    .time {
+      width: 70px;
+      flex-direction: column;
     }
 
     .tooltip {
-      margin-left: 20px;
+      width: 50px;
     }
   }
 }
