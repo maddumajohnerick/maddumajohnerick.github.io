@@ -1,0 +1,48 @@
+.Taskbar {
+  flex-grow: 0;
+  height: 42px;
+  background-color: #1d1d1d;
+  color: white;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+
+  .task-left {
+    display: flex;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 48px;
+    }
+
+    .windows {
+      &:hover {
+        background-color: #4c4c4c;
+        color: #429ce3;
+      }
+    }
+  }
+
+  .task-right {
+    text-align: right;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 15px 0px 0px;
+    align-items: center;
+
+    * {
+      margin-left: 10px;
+    }
+
+    .tooltip {
+      margin-left: 20px;
+    }
+  }
+}
