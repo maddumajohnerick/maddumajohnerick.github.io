@@ -5,7 +5,7 @@ import { CiBatteryFull } from 'react-icons/ci';
 import { GiSpeaker } from 'react-icons/gi';
 import './Taskbar.scss';
 
-const Taskbar = ({}) => {
+const Taskbar = () => {
   return (
     <div className="Taskbar">
       <div className="task-left">
