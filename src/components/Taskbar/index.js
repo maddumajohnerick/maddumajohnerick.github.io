@@ -33,7 +33,7 @@ const getDateTime = () => {
   return { _time: `${hrs}:${mins} ${amp}`, _date: `${day}/${month}/${year}` };
 };
 
-const Taskbar = ({}) => {
+const Taskbar = () => {
   const [time, setTime] = useState('');
   const [date, setDate] = useState('');
 

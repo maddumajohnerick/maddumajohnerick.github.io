@@ -12,7 +12,7 @@ import {
 } from 'react-icons/vsc';
 import './Screen.scss';
 
-const Screen = ({}) => {
+const Screen = () => {
   return (
     <div className="Screen" style={{ backgroundImage: `url('/galaxy.jpg')` }}>
       <div className="vscode">
