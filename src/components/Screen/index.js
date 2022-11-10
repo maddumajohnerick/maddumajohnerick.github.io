@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   VscSourceControl,
   VscBellDot,
@@ -9,24 +9,40 @@ import {
   VscClose,
   VscChromeRestore,
   VscChromeMinimize,
+  VscFiles,
+  VscSearch,
+  VscDebugAlt,
+  VscExtensions,
 } from 'react-icons/vsc';
 import './Screen.scss';
 
+const menus = [
+  'File',
+  'Edit',
+  'Selection',
+  'View',
+  'Go',
+  'Run',
+  'Terminal',
+  'Help',
+];
+
 const Screen = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="Screen" style={{ backgroundImage: `url('/galaxy.jpg')` }}>
       <div className="vscode">
         <div className="menubar">
           <div className="left">
             <img alt="vscode" src="/vscode.png" />
-            <div className="button opt1">File</div>
-            <div className="button opt2">Edit</div>
-            <div className="button opt3">Selection</div>
-            <div className="button opt4">View</div>
-            <div className="button opt5">Go</div>
-            <div className="button opt6">Run</div>
-            <div className="button opt7">Terminal</div>
-            <div className="button opt8">Help</div>
+            {menus.map((menu, index) => (
+              <div className={`button opt${index + 1}`}>{menu}</div>
+            ))}
             <div className="button optn">Options</div>
           </div>
           <div className="right">
@@ -42,7 +58,30 @@ const Screen = () => {
           </div>
         </div>
 
-        <div className="contents"></div>
+        <div className="contents">
+          <div className="leftmost">
+            <div
+              className={`toggle ${isOpen ? 'open' : ''}`}
+              onClick={handleToggle}
+            >
+              <VscFiles size={25} />
+            </div>
+            <div>
+              <VscSearch size={25} />
+            </div>
+            <div>
+              <VscSourceControl size={25} />
+            </div>
+            <div>
+              <VscDebugAlt size={25} />
+            </div>
+            <div>
+              <VscExtensions size={25} />
+            </div>
+          </div>
+          {isOpen && <div className="files">b</div>}
+          <div className="content">c</div>
+        </div>
 
         <div className="botbar">
           <div className="left">

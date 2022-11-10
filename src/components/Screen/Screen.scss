@@ -122,6 +122,43 @@
 
     .contents {
       flex-grow: 1;
+      display: flex;
+
+      .leftmost {
+        width: 50px;
+        background-color: #3c3c3c;
+        display: flex;
+        flex-direction: column;
+        color: #7f8585;
+
+        & > div {
+          box-sizing: border-box;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.toggle.open {
+            border-left: 2px solid white;
+            padding-right: 2px;
+            color: white;
+          }
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      .files {
+        width: 290px;
+        background-color: #252526;
+      }
+
+      .content {
+        flex-grow: 1;
+        background-color: #1e1e1e;
+      }
     }
 
     .botbar {
