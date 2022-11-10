@@ -11,12 +11,12 @@
 
   .vscode {
     height: 700px;
-    width: 1000px;
+    width: 1200px;
     background-color: #333333;
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       width: 100%;
       height: 100%;
     }
@@ -26,9 +26,98 @@
     }
 
     .menubar {
-      height: 30px;
+      height: 32px;
       flex-grow: 0;
       background-color: #3c3c3c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #bababa;
+      cursor: default;
+
+      img {
+        width: 20px;
+        margin-right: 8px;
+        align-self: center;
+      }
+
+      .left {
+        height: 100%;
+        font-size: 12px;
+        padding-left: 4px;
+        display: flex;
+
+        .button {
+          align-self: center;
+          padding: 4px 8px;
+          border-radius: 4px;
+          display: initial;
+
+          &:hover {
+            background-color: #4f4f4f;
+          }
+
+          &.opt6,
+          &.opt7,
+          &.opt8 {
+            @media (max-width: 580px) {
+              display: none;
+            }
+          }
+
+          &.opt5 {
+            @media (max-width: 510px) {
+              display: none;
+            }
+          }
+
+          &.opt4 {
+            @media (max-width: 470px) {
+              display: none;
+            }
+          }
+
+          &.opt3 {
+            @media (max-width: 440px) {
+              display: none;
+            }
+          }
+
+          &.opt2 {
+            @media (max-width: 360px) {
+              display: none;
+            }
+          }
+
+          &.optn {
+            display: none;
+
+            @media (max-width: 580px) {
+              display: initial;
+            }
+          }
+        }
+      }
+
+      .right {
+        height: 100%;
+        display: flex;
+
+        .button {
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background-color: #4f4f4f;
+          }
+
+          &.close:hover {
+            background-color: #d71526;
+          }
+        }
+      }
     }
 
     .contents {
@@ -44,6 +133,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      cursor: default;
 
       > div {
         display: flex;
