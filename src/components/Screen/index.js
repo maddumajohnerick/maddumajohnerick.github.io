@@ -61,7 +61,7 @@ const Screen = () => {
         <div className="contents">
           <div className="leftmost">
             <div
-              className={`toggle ${isOpen ? 'opsen' : ''}`}
+              className={`toggle ${isOpen ? 'open' : ''}`}
               onClick={handleToggle}
             >
               <VscFiles size={25} />
