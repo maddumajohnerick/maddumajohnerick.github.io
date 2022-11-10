@@ -61,7 +61,7 @@ const Screen = () => {
         <div className="contents">
           <div className="leftmost">
             <div
-              className={`toggle ${isOpen ? 'open' : ''}`}
+              className={`toggle ${isOpen ? 'opsen' : ''}`}
               onClick={handleToggle}
             >
               <VscFiles size={25} />
@@ -71,6 +71,7 @@ const Screen = () => {
             </div>
             <div>
               <VscSourceControl size={25} />
+              <div className="changes">14</div>
             </div>
             <div>
               <VscDebugAlt size={25} />
