@@ -1,10 +1,11 @@
 import './App.css';
 import Taskbar from 'components/Taskbar';
+import Screen from 'components/Screen';
 
 function App() {
   return (
     <div className="App">
-      <div className="screen">S</div>
+      <Screen />
       <Taskbar />
     </div>
   );
