@@ -1,9 +1,9 @@
 .Screen {
-  flex-grow: 1;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 
   .mr-16 {
     margin-right: 16px !important;

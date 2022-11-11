@@ -28,17 +28,17 @@ const Contents = () => {
         >
           <VscFiles size={28} />
         </div>
-        <div>
+        <div className="buttons btn1">
           <VscSearch size={28} />
         </div>
-        <div>
+        <div className="buttons btn2">
           <VscSourceControl size={28} />
           <div className="changes">14</div>
         </div>
-        <div>
+        <div className="buttons btn3">
           <VscDebugAlt size={28} />
         </div>
-        <div>
+        <div className="buttons btn4">
           <VscExtensions size={28} />
         </div>
       </div>
@@ -79,7 +79,28 @@ const Contents = () => {
         </div>
       )}
 
-      <div className="content">c</div>
+      {/* 
+      =======================================
+    
+      FIX HEIGHTS IN RESPONSIVE
+
+      =======================================
+    */}
+
+      <div className="content">
+        <div className="file-tabs"></div>
+
+        {selected === 1 && (
+          <div className="file-output">
+            <div className="about">
+              <div className="info">
+                <h1>John Erick Madduma</h1>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

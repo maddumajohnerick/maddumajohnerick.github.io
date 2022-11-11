@@ -43,6 +43,22 @@
         justify-content: center;
       }
     }
+
+    .buttons {
+      display: block;
+
+      @media (max-height: 390px) {
+        &.btn4 {
+          display: none;
+        }
+      }
+
+      @media (max-height: 320px) {
+        &.btn3 {
+          display: none;
+        }
+      }
+    }
   }
 
   .files {
@@ -63,7 +79,7 @@
 
     .repo {
       font-weight: bold;
-      color: white;
+      color: #cccccc;
       display: flex;
       position: relative;
       padding: 5px 22px;
@@ -92,5 +108,49 @@
   .content {
     flex-grow: 1;
     background-color: #1e1e1e;
+
+    .file-tabs {
+      height: 30px;
+      box-sizing: border-box;
+      border: 1px solid white;
+    }
+
+    .file-output {
+      height: calc(100% - 30px);
+      box-sizing: border-box;
+      border: 1px solid white;
+      overflow: hidden;
+    }
+
+    .about {
+      display: flex;
+      border: 1px solid white;
+      height: 500px;
+      width: 700px;
+      flex-direction: row;
+
+      @media (max-width: 1280px) {
+        flex-direction: column;
+      }
+
+      & > div {
+        width: 50%;
+        border: 1px solid white;
+
+        @media (max-width: 1280px) {
+          width: 100%;
+          border: 1px solid red;
+        }
+      }
+
+      h1 {
+        font-size: 30px;
+        color: #cccccc;
+      }
+
+      .info {
+        text-align: left;
+      }
+    }
   }
 }
