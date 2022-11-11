@@ -5,11 +5,16 @@ import {
   VscSearch,
   VscDebugAlt,
   VscExtensions,
+  VscEllipsis,
+  VscChevronDown,
+  VscAccount,
+  VscCode,
 } from 'react-icons/vsc';
 import './Contents.scss';
 
 const Contents = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const [selected, setSelected] = useState(1);
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
@@ -21,23 +26,59 @@ const Contents = () => {
           className={`toggle ${isOpen ? 'open' : ''}`}
           onClick={handleToggle}
         >
-          <VscFiles size={25} />
+          <VscFiles size={28} />
         </div>
         <div>
-          <VscSearch size={25} />
+          <VscSearch size={28} />
         </div>
         <div>
-          <VscSourceControl size={25} />
+          <VscSourceControl size={28} />
           <div className="changes">14</div>
         </div>
         <div>
-          <VscDebugAlt size={25} />
+          <VscDebugAlt size={28} />
         </div>
         <div>
-          <VscExtensions size={25} />
+          <VscExtensions size={28} />
         </div>
       </div>
-      {isOpen && <div className="files">b</div>}
+
+      {isOpen && (
+        <div className="files">
+          <div className="explorer">
+            EXPLORER
+            <div></div>
+            <div>
+              <VscEllipsis size={20} />
+            </div>
+          </div>
+          <div className="repo">
+            <div className="arrow-down">
+              <VscChevronDown size={20} />
+            </div>
+            MADDUMAJOHNERICK.GITHUB.IO
+          </div>
+          <div
+            className={`file ${selected === 1 ? 'active' : ''}`}
+            onClick={() => {
+              setSelected(1);
+            }}
+          >
+            <VscAccount size={10} color="#519aba" style={{ marginRight: 8 }} />
+            About Me
+          </div>
+          <div
+            className={`file ${selected === 2 ? 'active' : ''}`}
+            onClick={() => {
+              setSelected(2);
+            }}
+          >
+            <VscCode size={12} color="#cbbe33" style={{ marginRight: 6 }} />
+            Tech and Exp
+          </div>
+        </div>
+      )}
+
       <div className="content">c</div>
     </div>
   );
