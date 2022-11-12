@@ -9,7 +9,6 @@ import {
   VscChevronDown,
   VscAccount,
   VscCode,
-  VscStarEmpty,
 } from 'react-icons/vsc';
 import './Contents.scss';
 
