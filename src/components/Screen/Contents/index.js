@@ -56,7 +56,7 @@ const Contents = () => {
         </div>
         <div className="buttons btn2">
           <VscSourceControl size={28} />
-          <div className="changes">14</div>
+          {/* <div className="changes">14</div> */}
         </div>
         <div className="buttons btn3">
           <VscDebugAlt size={28} />
@@ -97,13 +97,32 @@ const Contents = () => {
             }}
           >
             <VscCode size={12} color="#cbbe33" style={{ marginRight: 6 }} />
-            Tech and Exp
+            tech_and_etc.js
           </div>
         </div>
       )}
 
       <div className="content">
-        <div className="file-tabs"></div>
+        <div className="file-tabs">
+          <div
+            className={`file ${selected === 1 ? 'active' : ''}`}
+            onClick={() => {
+              setSelected(1);
+            }}
+          >
+            <VscAccount size={10} color="#519aba" style={{ marginRight: 8 }} />
+            About Me
+          </div>
+          <div
+            className={`file ${selected === 2 ? 'active' : ''}`}
+            onClick={() => {
+              setSelected(2);
+            }}
+          >
+            <VscCode size={12} color="#cbbe33" style={{ marginRight: 6 }} />
+            tech_and_etc.js
+          </div>
+        </div>
 
         {selected === 1 && (
           <div className="file-output">
@@ -112,9 +131,9 @@ const Contents = () => {
                 <h1>John Erick Madduma</h1>
                 <div className="title">Frontend Developer</div>
                 <div className="about-text">
-                  <h2>About</h2>
+                  <h2>About Me</h2>
                   I'm a frontend developer with experience developing projects
-                  using JS, Node, and React.
+                  using JS, Node, and React. I like cats 🐱
                   <h2>Work Experience</h2>
                   {exps.map((exp) => (
                     <div className="work">

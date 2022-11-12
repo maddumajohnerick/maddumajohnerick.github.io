@@ -120,6 +120,25 @@
     .file-tabs {
       height: 30px;
       box-sizing: border-box;
+      background-color: #252526;
+      display: flex;
+      font-size: 12px;
+      color: #cccccc;
+
+      .file {
+        padding: 5px 22px;
+        display: flex;
+        align-items: center;
+
+        &.active {
+          background-color: #1e1e1e;
+          color: #cccccc;
+        }
+
+        &:hover {
+          background-color: #313132;
+        }
+      }
     }
 
     .file-output {
