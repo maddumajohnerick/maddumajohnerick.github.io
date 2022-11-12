@@ -135,7 +135,7 @@
           color: #cccccc;
         }
 
-        &:hover {
+        &:not(.active):hover {
           background-color: #313132;
         }
       }
@@ -236,6 +236,7 @@
           margin-top: 20px;
           height: 150px;
           width: 150px;
+          border-radius: 5px;
         }
 
         @media (max-width: 1050px) {
