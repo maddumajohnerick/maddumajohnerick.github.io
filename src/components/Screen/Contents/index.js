@@ -79,14 +79,6 @@ const Contents = () => {
         </div>
       )}
 
-      {/* 
-      =======================================
-    
-      FIX HEIGHTS IN RESPONSIVE
-
-      =======================================
-    */}
-
       <div className="content">
         <div className="file-tabs"></div>
 
@@ -96,7 +88,130 @@ const Contents = () => {
               <div className="info">
                 <h1>John Erick Madduma</h1>
               </div>
-              <div></div>
+              <div>
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+                test
+                <br />
+              </div>
             </div>
           </div>
         )}

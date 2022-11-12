@@ -1,14 +1,18 @@
 .Contents {
-  flex-grow: 1;
+  height: calc(100% - (32px + 24px));
+  position: relative;
   display: flex;
   cursor: default;
 
   .leftmost {
+    height: 100%;
     width: 55px;
+    position: relative;
     background-color: #3c3c3c;
     display: flex;
     flex-direction: column;
     color: #7f8585;
+    flex-shrink: 0;
 
     & > div {
       box-sizing: border-box;
@@ -62,8 +66,10 @@
   }
 
   .files {
-    font-size: 12px;
+    height: 100%;
     width: 290px;
+    position: relative;
+    font-size: 12px;
     background-color: #252526;
     color: #cccccc;
 
@@ -106,20 +112,28 @@
   }
 
   .content {
-    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
     background-color: #1e1e1e;
 
     .file-tabs {
       height: 30px;
       box-sizing: border-box;
-      border: 1px solid white;
     }
 
     .file-output {
       height: calc(100% - 30px);
       box-sizing: border-box;
-      border: 1px solid white;
-      overflow: hidden;
+      overflow: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 1050px) {
+        width: 100%;
+        align-items: baseline;
+      }
     }
 
     .about {
@@ -133,13 +147,15 @@
         flex-direction: column;
       }
 
+      @media (max-width: 1050px) {
+        width: 100%;
+      }
+
       & > div {
         width: 50%;
-        border: 1px solid white;
 
         @media (max-width: 1280px) {
           width: 100%;
-          border: 1px solid red;
         }
       }
 
