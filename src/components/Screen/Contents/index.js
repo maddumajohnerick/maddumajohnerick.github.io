@@ -131,7 +131,7 @@ const Contents = () => {
         </div>
       )}
 
-      <div className={`content ${isOpen ? 'side-open' : ''}`}>
+      <div className={`content ${isOpen && selected === 2 ? 'side-open' : ''}`}>
         <div className="file-tabs">
           <div
             className={`file ${selected === 1 ? 'active' : ''}`}
