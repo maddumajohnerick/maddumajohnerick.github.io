@@ -19,6 +19,29 @@ const Contents = () => {
     setIsOpen(!isOpen);
   };
 
+  const exps = [
+    {
+      company: 'Arcanys',
+      title: 'Web Developer',
+      span: 'July 2018 - Present',
+    },
+    {
+      company: 'Sizmek',
+      title: 'Web Developer',
+      span: 'Sep 2017 - Jul 2018',
+    },
+    {
+      company: 'Appshouse',
+      title: 'Frontend Developer',
+      span: 'April 2016 - Sep 2017',
+    },
+    {
+      company: 'Azaza',
+      title: 'Backend Developer',
+      span: 'May 2015 - Feb 2016',
+    },
+  ];
+
   return (
     <div className="Contents">
       <div className="leftmost">
@@ -87,130 +110,22 @@ const Contents = () => {
             <div className="about">
               <div className="info">
                 <h1>John Erick Madduma</h1>
+                <div className="title">Frontend Developer</div>
+                <div className="about-text">
+                  <h2>About</h2>
+                  I'm a frontend developer with experience developing projects
+                  using JS, Node, and React.
+                  <h2>Work Experience</h2>
+                  {exps.map((exp) => (
+                    <div className="work">
+                      <span>{exp.company}</span> {exp.title}
+                      <div>{exp.span}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div>
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
-                test
-                <br />
+              <div className="pic">
+                <img src="/me.png" alt="" />
               </div>
             </div>
           </div>

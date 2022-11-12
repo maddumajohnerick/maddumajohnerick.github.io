@@ -136,14 +136,16 @@
       }
     }
 
+    // Intro page
     .about {
       display: flex;
-      border: 1px solid white;
       height: 500px;
       width: 700px;
       flex-direction: row;
+      padding: 0px 20px;
+      box-sizing: border-box;
 
-      @media (max-width: 1280px) {
+      @media (max-width: 1050px) {
         flex-direction: column;
       }
 
@@ -159,13 +161,68 @@
         }
       }
 
+      // Copies
       h1 {
         font-size: 30px;
         color: #cccccc;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 2px;
+      }
+      h2 {
+        font-size: 18px;
+        color: #cccccc;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      .title {
+        font-size: 20px;
+        color: #989898;
+        font-weight: bold;
+      }
+      .about-text {
+        color: #cccccc;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .work {
+        margin-bottom: 8px;
+
+        > div {
+          color: #989898;
+          font-size: 14px;
+        }
+
+        > span {
+          color: #2885ff;
+          display: inline-block;
+          margin-right: 8px;
+        }
       }
 
       .info {
         text-align: left;
+        order: 1;
+
+        @media (max-width: 1050px) {
+          order: 2;
+        }
+      }
+
+      .pic {
+        order: 2;
+
+        img {
+          margin-top: 20px;
+          height: 150px;
+          width: 150px;
+        }
+
+        @media (max-width: 1050px) {
+          order: 1;
+          text-align: left;
+        }
       }
     }
   }
