@@ -10,7 +10,59 @@ import {
   VscAccount,
   VscCode,
 } from 'react-icons/vsc';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './Contents.scss';
+
+const exps = [
+  {
+    company: 'Arcanys',
+    title: 'Web Developer',
+    span: 'July 2018 - Present',
+  },
+  {
+    company: 'Sizmek',
+    title: 'Web Developer',
+    span: 'Sep 2017 - Jul 2018',
+  },
+  {
+    company: 'Appshouse',
+    title: 'Frontend Developer',
+    span: 'April 2016 - Sep 2017',
+  },
+  {
+    company: 'Azaza',
+    title: 'Backend Developer',
+    span: 'May 2015 - Feb 2016',
+  },
+];
+
+const codeString = `const technologies = [
+  'Node',
+  'React', 
+  'Javascript',
+  'Typescript', // WIP
+  'NextJs', // WIP
+  'CSS',
+  'SASS', // WIP
+  'HTML', 
+  'Git', 
+]
+
+const educ = {
+  university: 'CIT-U(Cebu Institute of Technology - University)',
+  course: 'BSIT',
+  year: 2015
+}
+
+const hobbies = [
+  'Playing bass 🎸',
+  'Reading manga 📖',
+  'Watching movies 📺',
+  'Playing with cat 🐈',
+  'Sleeping 😴'
+  'Eating 🍴'
+]`;
 
 const Contents = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,29 +70,6 @@ const Contents = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
-
-  const exps = [
-    {
-      company: 'Arcanys',
-      title: 'Web Developer',
-      span: 'July 2018 - Present',
-    },
-    {
-      company: 'Sizmek',
-      title: 'Web Developer',
-      span: 'Sep 2017 - Jul 2018',
-    },
-    {
-      company: 'Appshouse',
-      title: 'Frontend Developer',
-      span: 'April 2016 - Sep 2017',
-    },
-    {
-      company: 'Azaza',
-      title: 'Backend Developer',
-      span: 'May 2015 - Feb 2016',
-    },
-  ];
 
   return (
     <div className="Contents">
@@ -102,7 +131,7 @@ const Contents = () => {
         </div>
       )}
 
-      <div className="content">
+      <div className={`content ${isOpen ? 'side-open' : ''}`}>
         <div className="file-tabs">
           <div
             className={`file ${selected === 1 ? 'active' : ''}`}
@@ -147,6 +176,17 @@ const Contents = () => {
                 <img src="/me.png" alt="" />
               </div>
             </div>
+          </div>
+        )}
+        {selected === 2 && (
+          <div className="file-output code">
+            <SyntaxHighlighter
+              language="javascript"
+              style={vscDarkPlus}
+              showLineNumbers
+            >
+              {codeString}
+            </SyntaxHighlighter>
           </div>
         )}
       </div>
