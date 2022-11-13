@@ -22,7 +22,7 @@ const exps = [
   },
   {
     company: 'Sizmek',
-    title: 'Web Developer',
+    title: 'Creative Developer',
     span: 'Sep 2017 - Jul 2018',
   },
   {
@@ -161,8 +161,8 @@ const Contents = () => {
                 <div className="title">Frontend Developer</div>
                 <div className="about-text">
                   <h2>About Me</h2>
-                  I'm a frontend developer with experience developing projects
-                  using JS, Node, and React. I like cats 🐱
+                  I'm a frontend developer with experience in developing
+                  projects using JS, Node, and React. I like cats 🐱
                   <h2>Work Experience</h2>
                   {exps.map((exp) => (
                     <div className="work">
