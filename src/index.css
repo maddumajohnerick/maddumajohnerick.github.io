@@ -1,5 +1,4 @@
 body {
-  overflow: hidden;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +9,5 @@ html,
 body,
 body > div {
   height: 100%;
+  overflow: hidden;
 }
