@@ -246,6 +246,16 @@
           margin-right: 8px;
         }
       }
+      .contacts {
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+
+        a {
+          margin-right: 6px;
+          color: #2885ff;
+        }
+      }
 
       .info {
         text-align: left;

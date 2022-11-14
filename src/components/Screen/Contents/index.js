@@ -9,7 +9,10 @@ import {
   VscChevronDown,
   VscAccount,
   VscCode,
+  VscGithubAlt,
 } from 'react-icons/vsc';
+import { AiOutlineCodepen, AiOutlineLinkedin } from 'react-icons/ai';
+import { IoLogoNpm } from 'react-icons/io';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './Contents.scss';
@@ -34,6 +37,30 @@ const exps = [
     company: 'Azaza',
     title: 'Backend Developer',
     span: 'May 2015 - Feb 2016',
+  },
+];
+
+const contacts = [
+  {
+    Component: AiOutlineLinkedin,
+    size: 26,
+    link: 'https://www.linkedin.com/in/john-erick-madduma-300083113/',
+  },
+  {
+    Component: VscGithubAlt,
+    size: 20,
+    strokeWidth: 0.6,
+    link: 'https://github.com/maddumajohnerick',
+  },
+  {
+    Component: AiOutlineCodepen,
+    size: 24,
+    link: 'https://codepen.io/maddumajohnerick',
+  },
+  {
+    Component: IoLogoNpm,
+    size: 32,
+    link: 'https://www.npmjs.com/~maddumajohnerick',
   },
 ];
 
@@ -190,6 +217,21 @@ const Contents = () => {
               <div className="info">
                 <h1>John Erick Madduma</h1>
                 <div className="title">Frontend Developer</div>
+                <div className="contacts">
+                  {contacts.map((contact, i) => (
+                    <a
+                      key={i}
+                      href={contact.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <contact.Component
+                        size={contact.size}
+                        strokeWidth={contact.strokeWidth || 'initial'}
+                      />
+                    </a>
+                  ))}
+                </div>
                 <div className="about-text">
                   <h2>About Me</h2>
                   I'm a frontend developer with experience in developing
