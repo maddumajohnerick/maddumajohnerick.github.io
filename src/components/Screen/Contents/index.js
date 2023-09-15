@@ -19,6 +19,11 @@ import './Contents.scss';
 
 const exps = [
   {
+    company: 'Creative Sims',
+    title: 'Sr. Frontend Developer',
+    span: 'May 2022 - Sept 2023',
+  },
+  {
     company: 'Arcanys',
     title: 'Web Developer',
     span: 'July 2018 - Present',
@@ -67,6 +72,7 @@ const contacts = [
 const codeString = `const technologies = [
   'Node',
   'React', 
+  'Redux/Redux Toolkit', 
   'Javascript',
   'Typescript', // WIP
   'NextJs', // WIP
