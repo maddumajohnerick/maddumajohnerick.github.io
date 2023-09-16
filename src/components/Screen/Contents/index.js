@@ -19,14 +19,14 @@ import './Contents.scss';
 
 const exps = [
   {
-    company: 'Creative Sims',
-    title: 'Sr. Frontend Developer',
-    span: 'May 2022 - Sept 2023',
-  },
-  {
     company: 'Arcanys',
     title: 'Web Developer',
     span: 'July 2018 - Present',
+  },
+  {
+    company: 'Creative Sims',
+    title: 'Sr. Frontend Developer',
+    span: 'May 2022 - Sept 2023',
   },
   {
     company: 'Sizmek',
