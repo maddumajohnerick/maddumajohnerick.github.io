@@ -69,7 +69,13 @@ const contacts = [
   },
 ];
 
-const codeString = `const technologies = [
+const codeString = `const educ = {
+    university: 'CIT-U(Cebu Institute of Technology - University)',
+    course: 'BSIT',
+    year: 2015
+  }
+
+const technologies = [
   'Node',
   'React', 
   'Redux/Redux Toolkit', 
@@ -82,19 +88,12 @@ const codeString = `const technologies = [
   'Git', 
 ]
 
-const educ = {
-  university: 'CIT-U(Cebu Institute of Technology - University)',
-  course: 'BSIT',
-  year: 2015
-}
-
 const hobbies = [
+  'Kendo 🗡️',
   'Playing bass 🎸',
   'Reading manga 📖',
   'Watching movies 📺',
-  'Playing with cat 🐈',
-  'Sleeping 😴'
-  'Eating 🍴'
+  'Playing with cats 🐈',
 ]`;
 
 const checkMobile = () => {
@@ -130,6 +129,17 @@ const Contents = () => {
 
   useEffect(() => {
     handleMobileClose();
+
+    const handleResize = () => {
+      setIsOpen(window.innerWidth <= 700 ? false : true);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
