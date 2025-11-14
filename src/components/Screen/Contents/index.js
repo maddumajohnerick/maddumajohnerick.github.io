@@ -12,7 +12,8 @@ import {
   VscGithubAlt,
 } from 'react-icons/vsc';
 import { AiOutlineCodepen, AiOutlineLinkedin } from 'react-icons/ai';
-import { IoLogoNpm } from 'react-icons/io';
+import { CiMail } from 'react-icons/ci';
+// import { IoLogoNpm } from 'react-icons/io';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './Contents.scss';
@@ -47,6 +48,11 @@ const exps = [
 
 const contacts = [
   {
+    Component: CiMail,
+    size: 26,
+    link: 'mailto:madduma.johnerick@gmail.com',
+  },
+  {
     Component: AiOutlineLinkedin,
     size: 26,
     link: 'https://www.linkedin.com/in/john-erick-madduma-300083113/',
@@ -62,11 +68,11 @@ const contacts = [
     size: 24,
     link: 'https://codepen.io/maddumajohnerick',
   },
-  {
-    Component: IoLogoNpm,
-    size: 32,
-    link: 'https://www.npmjs.com/~maddumajohnerick',
-  },
+  // {
+  //   Component: IoLogoNpm,
+  //   size: 32,
+  //   link: 'https://www.npmjs.com/~maddumajohnerick',
+  // },
 ];
 
 const codeString = `const educ = {
@@ -254,7 +260,7 @@ const Contents = () => {
                   projects using JS, Node, and React. I like cats 🐱
                   <h2>Work Experience</h2>
                   {exps.map((exp) => (
-                    <div className="work">
+                    <div className="work" key={exp.company}>
                       <span>{exp.company}</span> {exp.title}
                       <div>{exp.span}</div>
                     </div>

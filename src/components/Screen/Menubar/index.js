@@ -19,7 +19,9 @@ const Menubar = () => {
       <div className="left">
         <img alt="vscode" src="/vscode.png" />
         {menus.map((menu, index) => (
-          <div className={`button opt${index + 1}`}>{menu}</div>
+          <div key={index} className={`button opt${index + 1}`}>
+            {menu}
+          </div>
         ))}
         <div className="button optn">Options</div>
       </div>

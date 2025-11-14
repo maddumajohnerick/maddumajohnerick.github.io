@@ -16,8 +16,8 @@ const Botbar = () => {
         <VscSourceControl size={16} />
         <div className="mr-16">master</div>
         <VscSync size={16} />
-        <div>3&darr;</div>
-        <div className="mr-16">20&uarr;</div>
+        <div>12&darr;</div>
+        <div className="mr-16">10&uarr;</div>
         <VscError size={16} />
         <div>0</div>
         <VscWarning size={16} />
